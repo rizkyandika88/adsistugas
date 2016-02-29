@@ -1,0 +1,11 @@
+#!/bin/bash
+function haritanggal()
+{
+  date | awk '{print $1,$2,$3}'
+}
+function durasi()
+{
+  uptime | awk '{print $3}' | awk -F ',' '{print $1}'
+}
+haritanggal
+durasi

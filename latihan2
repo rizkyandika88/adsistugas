@@ -1,0 +1,15 @@
+#!/bin/bash
+echo "Menu Program"
+echo -n "Pilihan:"
+read angka
+case $angka in
+1) lscpu
+   ;;
+2) free -h
+   ;;
+3) uname -mrs
+   ;;
+4) lsb_release -a
+   ;;
+5) lsblk
+esac

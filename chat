@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo -n "ketikan chat:"
+read chat
+echo "$USER : $chat" >> /home/aseng/shell_script/history
+tail -20 /home/aseng/shell_script/history
